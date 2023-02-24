@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./script.js" type="module"></script>
+    <title>Weather report</title>
+  </head>
+  <body>
+    <header>
+      <span class="material-symbols-outlined"> home </span>
+      <div id="search">
+        <input type="text" placeholder="Search a location" id="searched" />
+        <button type="submit" id="runSearch">
+          <svg
+            class="svg-icon search-icon"
+            aria-labelledby="title desc"
+            role="img"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 19.9 19.7"
+          >
+            <desc id="desc">A magnifying glass icon.</desc>
+            <g class="search-path" fill="none" stroke="#848F91">
+              <path stroke-linecap="square" d="M18.5 18.3l-5.4-5.4" />
+              <circle cx="8" cy="8" r="7" />
+            </g>
+          </svg>
+        </button>
+      </div>
+      <div class="hamburgerMenu">
+        <div id="line1"></div>
+        <div id="line2"></div>
+        <div id="line3"></div>
+      </div>
+    </header>
+
+    <div class="more">
+      <ul>
+        <a href="#favorites"><li>Favorites</li></a>
+        <a href="#"><li>About us</li></a>
+        <a href="#"><li>Contact us</li></a>
+        <a href="#"><li>Terms and conditions</li></a>
+      </ul>
+    </div>
+
+    <div class="deleteFavorite">
+      <div class="deleteTitleCont">
+        <h3 id="deleteTitle"></h3>
+      </div>
+      <div class="deleteConfirmation">
+        <div id="ok">
+          <p>ok</p>
+        </div>
+      </div>
+    </div>
+    <main>
+      <div class="hero">
+        <img src="" alt="hero image" id="heroImage" />
+        <div class="overlay">
+          <h1 id="selectedLocation"></h1>
+          <div class="report"></div>
+        </div>
+      </div>
+
+      <div class="mainCard">
+        <h1></h1>
+      </div>
+
+      <div class="weather">
+        <h1>Locations</h1>
+        <div class="weatherCards"></div>
+      </div>
+
+      <div class="searchs">
+        <h1>Chronology</h1>
+        <div class="searchedLocations"></div>
+      </div>
+
+      <a name="favorites"></a>
+
+      <div class="favorites">
+        <h1>Favorites</h1>
+        <div class="favoriteLocations"></div>
+      </div>
+
+      <div id="deleteDefinition"></div>
+    </main>
+    <div id="confirm"></div>
+  </body>
+</html>
